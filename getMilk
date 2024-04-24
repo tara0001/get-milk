@@ -1,18 +1,13 @@
-function getMilk(money){
-    var money_bottle = money / 1.5 // price of each milk bottle is 1.5
-    var cal_money = custom_round(money_bottle)
-    console.log("you can buy " + cal_money)
-    var return_money = money % 1.5
-    console.log("your return money is " + return_money)
+function getMilk(money, costPerBottle) {
+    console.log("buy " + calBottels(money, costPerBottle)+ "bottle of milk")
+    return calCahnge(money,costPerBottle)
 }
-function custom_round(number) {  // This function rounds the decimal part.
-    var main_number = parseInt(number)
-    var second_number = number - main_number
-    if (second_number >= 0.5){
-        return Math.ceil(number)
-    }    
-    else{
-        return Math.floor(number)
-        }
-    }
-getMilk(5)
+function calBottels(money, costPerBottle){
+    var numberOfBottle = Math.floor(money / moneyPerBottle)
+    return numberOfBottle
+}
+function calCahnge(money, costPerBottle) {
+    var ch ange = money % costPerBottle
+    return change
+}
+console.log("here is your "+ getMilk(5,1.5) + " change")
