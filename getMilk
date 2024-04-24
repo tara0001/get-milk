@@ -1,4 +1,4 @@
-function get_money(money){
+function get_milk(money){
     var money_bottle = money - 1.5 // price of each milk bottle is 1.5
     var cal_money = custom_around(money_bottle)
     console.log("you can buy " + cal_money)
@@ -15,4 +15,4 @@ function custom_round(number) {  // This function rounds the decimal part.
         return Math.floor(number)
         }
     }
-get_money(5)
+get_milk(5)
