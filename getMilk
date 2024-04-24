@@ -1,6 +1,6 @@
 function getMilk(money){
-    var money_bottle = money - 1.5 // price of each milk bottle is 1.5
-    var cal_money = custom_around(money_bottle)
+    var money_bottle = money / 1.5 // price of each milk bottle is 1.5
+    var cal_money = custom_round(money_bottle)
     console.log("you can buy " + cal_money)
     var return_money = money % 1.5
     console.log("your return money is " + return_money)
