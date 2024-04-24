@@ -1,0 +1,18 @@
+function get_money(money){
+    var money_bottle = money - 1.5 // price of each milk bottle is 1.5
+    var cal_money = custom_around(money_bottle)
+    console.log("you can buy " + cal_money)
+    var return_money = money % 1.5
+    console.log("your return money is " + return_money)
+}
+function custom_round(number) {  // This function rounds the decimal part.
+    var main_number = parseInt(number)
+    var second_number = number - main_number
+    if (second_number >= 0.5){
+        return Math.ceil(number)
+    }    
+    else{
+        return Math.floor(number)
+        }
+    }
+get_money(5)
