@@ -7,7 +7,7 @@ function calBottels(money, costPerBottle){
     return numberOfBottle
 }
 function calCahnge(money, costPerBottle) {
-    var ch ange = money % costPerBottle
+    var change = money % costPerBottle
     return change
 }
 console.log("here is your "+ getMilk(5,1.5) + " change")
